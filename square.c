@@ -25,23 +25,46 @@ void display(void)
 
     //glRotated(-15, 0, 0, 1);
 
-    glMultMatrixd((double *)t);
+    //glMultMatrixd((double *)t);
 
     glBegin(GL_LINES);
 
     glColor3f(0.0, 0.0, 0.0);
 
+    // glVertex3f(4.0, 4.0, 0);
+    // glVertex3f(6.0, 6.0, 0);
+    // glVertex3f(6.0, 6.0, 0);
+    // glVertex3f(8.0, 4.0, 0);
+    // glVertex3f(8.0, 4.0, 0);
+    // glVertex3f(6.0, 2.0, 0);
+    // glVertex3f(6.0, 2.0, 0);
+    // glVertex3f(4.0, 4.0, 0);
+
+    glVertex3f(0.0, 0.0, 0);
+    glVertex3f(0.0, 4.0, 0);
+    glVertex3f(0.0, 4.0, 0);
     glVertex3f(4.0, 4.0, 0);
-    glVertex3f(6.0, 6.0, 0);
-    glVertex3f(6.0, 6.0, 0);
-    glVertex3f(8.0, 4.0, 0);
-    glVertex3f(8.0, 4.0, 0);
-    glVertex3f(6.0, 2.0, 0);
-    glVertex3f(6.0, 2.0, 0);
     glVertex3f(4.0, 4.0, 0);
+    glVertex3f(4.0, 0.0, 0);
+    glVertex3f(4.0, 0.0, 0);
+    glVertex3f(0.0, 0.0, 0);
     glEnd();
     //glPopMatrix();
     //glMultMatrixd((double *)m);
+    glMultMatrixd((double *)t);
+    glBegin(GL_LINES);
+
+    glColor3f(0.0, 0.0, 0.0);
+
+    glVertex3f(0.0, 0.0, 0);
+    glVertex3f(0.0, 4.0, 0);
+    glVertex3f(0.0, 4.0, 0);
+    glVertex3f(4.0, 4.0, 0);
+    glVertex3f(4.0, 4.0, 0);
+    glVertex3f(4.0, 0.0, 0);
+    glVertex3f(4.0, 0.0, 0);
+    glVertex3f(0.0, 0.0, 0);
+    glEnd();
 
     glFlush();
 }
